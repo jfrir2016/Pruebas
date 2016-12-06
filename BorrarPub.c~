@@ -47,7 +47,7 @@ int BorrarPost (int fd, NodePost *PRoot, int id)
     }
     return 1;
   }
-  if(BorrarNodoPub(find->id,&PRoot))				//Borro
+  if(BorrarNodoPub(find->id,PRoot))				//Borro
       return 1;
   i=1;
   if((send(fd,&i,sizeof(int),0))==-1)				//Envio cantidad

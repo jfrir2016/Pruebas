@@ -69,7 +69,6 @@ int main (void)
     }
     
     printf("Se recibio conexion de: %s", inet_ntoa(client_addr.sin_addr));
-    fflush(stdout);
     
     if(!fork())
     {

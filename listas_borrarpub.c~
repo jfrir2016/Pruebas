@@ -21,7 +21,7 @@ int BorrarNodoPub(int id, NodePost **root)
   }
   else
   {
-    while(current->post.root!=NULL)
+    while(current->post.(*root)!=NULL)
       BorrarComentario(current->post.root->comentario.id, current->post.root);
     (*root)=(*root)->nxt;
     free(current);
